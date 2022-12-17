@@ -1,0 +1,17 @@
+{
+  "name": "leezozz-blog",
+  "version": "1.0.0",
+  "author": "leezozz-blog",
+  "scripts": {
+    "dev": "vuepress dev . --open --host \"localhost\"",
+    "build": "vuepress build ."
+  },
+  "devDependencies": {
+    "vuepress": "1.9.7",
+    "vuepress-theme-reco": "1.6.16"
+  },
+  "description": "我的博客，日常记录",
+  "dependencies": {
+    "shelljs": "^0.8.5"
+  }
+}
