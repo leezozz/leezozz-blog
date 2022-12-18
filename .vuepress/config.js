@@ -73,7 +73,7 @@ module.exports = {
       {
         "text": "GitHub",
         "icon": "reco-message",
-        "link": "https://github.com/recoluan",
+        "link": "https://github.com/leezozz/leezozz-blog.git",
       }
     ],
     "sidebar": {
@@ -96,7 +96,7 @@ module.exports = {
       //   "text": "Tag"
       // },
       "socialLinks": [     // 信息栏展示社交信息
-        { "icon": 'reco-github', "link": 'https://github.com/recoluan' }
+        { "icon": 'reco-github', "link": 'https://github.com/leezozz/leezozz-blog.git' }
       ]
     },
     "friendLink": [
@@ -104,7 +104,7 @@ module.exports = {
         "title": "日常记录",
         "desc": "博观而约取，厚积而薄发。",
         "email": "1156743527@qq.com",
-        "link": "https://www.recoluan.com"
+        "link": "https://github.com/leezozz/leezozz-blog.git"
       }
     ],
     // "logo": "/logo.png",
