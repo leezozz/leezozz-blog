@@ -1,5 +1,12 @@
+const { sideBarConfig }  = require('./src/sideBarData')
+const { sideBarFilter }  = require('./src/sideBarFilter')
+// 设置根路径
+// const rootPath = '/Users/admin/Documents/work/vue3/leezozz-blog/js'
 
-let { getSideBar } = require('./src/sidebar')
+console.log('66666', sideBarFilter(sideBarConfig))
+
+
+
 
 module.exports = {
   "title": "leezozz-blog",
@@ -32,38 +39,18 @@ module.exports = {
       {
         "text": "js",
         "icon": "reco-blog",
-        "items": [
-          {
-            "text": "函数式编程",
-            "link": "/js/一、函数式编程范式/1. 函数式编程.md"
-          },
-          {
-            "text": "ECMAScript 新特性",
-            "link": "/js/二、ECMAScript 新特性/1. xxx.md"
-          }
-        ]
+        "link": "/blog/js/",
+        // 1. 函数式编程.md
       },
       {
         "text": "vue",
-        "icon": "reco-document",
-        "items": [
-          {
-            "text": "vue",
-            "link": "/vue/一、vue-router/"
-            // 1. 函数式编程.md
-          }
-        ]
+        "icon": "reco-other",
+        "link": "/blog/vue/",
       },
       {
         "text": "vue-router",
         "icon": "reco-three",
-        "items": [
-          {
-            "text": "vue",
-            "link": "/vue-router"
-            // 1. 函数式编程.md
-          }
-        ]
+        "link": "/blog/vue-router/",
       },
       {
         "text": "时间轴",
@@ -76,15 +63,7 @@ module.exports = {
         "link": "https://github.com/leezozz/leezozz-blog.git",
       }
     ],
-    "sidebar": {
-      "/js/一、函数式编程范式/": getSideBar('js', '一、函数式编程范式'),
-      "/js/二、ECMAScript 新特性/": getSideBar('js', '二、ECMAScript 新特性')
-      // "/js/一、函数式编程范式/": [
-      //   '1. 函数式编程',
-      //   '2. 高阶函数-函数作为参数、返回值'
-      // ]
-      
-    },
+    "sidebar": sideBarFilter(sideBarConfig),
     "type": "blog",
     "blogConfig": {
       // "category": {
