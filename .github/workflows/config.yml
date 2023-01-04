@@ -15,7 +15,7 @@ jobs: # 任务
 
     steps:  # 指定每个job的运行步骤。可以包含一个或多个步骤
       - name: Checkout  # 步骤1
-        uses: actions/checkout@v1 # 作用：获取源码。 官方actions库：https://github.com/actions
+        uses: actions/checkout@v1 # 作用：获取源码。  官方actions库：https://github.com/actions
 
       - name: Use Node.js ${{ matrix.node-version }} # 步骤2
         uses: actions/setup-node@v1 # 作用：安装nodejs
