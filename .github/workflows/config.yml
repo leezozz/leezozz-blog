@@ -5,17 +5,16 @@ on:
    branches:
     - main
 
-jobs:   # 任务
-  build: 
+jobs: # 任务
+  build: # 自定义名称
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
         node-version: [14.x]
 
-
-     steps:    # 指定每个job的运行步骤。可以包含一个或多个步骤
-      - name: Checkout # 步骤1
+    steps:  # 指定每个job的运行步骤。可以包含一个或多个步骤
+      - name: Checkout  # 步骤1
         uses: actions/checkout@v1 # 作用：获取源码。 官方actions库：https://github.com/actions
 
       - name: Use Node.js ${{ matrix.node-version }} # 步骤2
