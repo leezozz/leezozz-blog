@@ -3,9 +3,7 @@ const path = require('path')
 
 // 读取文件，返回符合 config.js 中的数组
 function fslist(filePath, folderName) {
-  console.log('读取文件，返回符合 config.js 中的数组', filePath, folderName)
   const fullFilePath = path.join(filePath, folderName)
-  console.log('fullFilePath', fullFilePath)
   // 读取目录
   const files = fs.readdirSync(fullFilePath)
   return files.map(f => {
@@ -24,14 +22,10 @@ function fslist(filePath, folderName) {
 
 // 柯里化
 function curry(fn, args) {
-  console.log('柯里化', fn, args)
   var length = fn.length // 获取要柯里化的函数的形参总长度
   var args = args || [] // 获取当前函数在调用前的实参
   return function() {
     var _args = [...args, ...arguments] // 当前实参的集合
-    console.log('_args', _args)
-    console.log('_args.length', _args.length)
-    console.log('length', length)
     if (_args.length < length) {
       return curry.call(this, fn, _args) // 递归逻辑 - 实参的长度小于形参时返回一个函数用来接收剩余参数
     } else {
@@ -42,7 +36,6 @@ function curry(fn, args) {
 
 function sideBarFunc(arr, fn) {
   return arr.map((item) => {
-    console.log('item', item)
     return {
       title: item.title, 
       collapsable: false,
@@ -54,7 +47,6 @@ function sideBarFunc(arr, fn) {
 const sideBarFilter = sideBarConfig => {
   const sideBarData = {}
   sideBarConfig.forEach(sideBarItem => {
-    console.log('sideBarItem',sideBarItem )
     sideBarData[sideBarItem.curryUri + '/'] = sideBarFunc(sideBarItem.sideBarInfo, curry(fslist)(path.resolve(__dirname, '../..' + sideBarItem.curryUri)))
   })
   return sideBarData
