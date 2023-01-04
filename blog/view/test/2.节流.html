@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>节流</title>
+</head>
+<body>
+  <button id="btn" onclick="clickEvent('啦啦啦')">发射按钮</button>
+  <script>
+    // 节流
+    
+    
+    function handleClick(val) {
+      console.log('节流', val)
+    }
+    
+    // 1. new Date方式
+    // function throttle(fn, delay) {
+    //   let countTime = 0
+    //   return function(args) {
+    //     let _this = this;
+    //     let _argus = arguments;
+    //     let nowTime = new Date()
+    //     if(nowTime - countTime > delay) {
+    //       // fn(_this, _argus)
+    //       fn(args)
+    //       countTime = nowTime
+    //     }
+    //   }
+    // }
+
+    // 2. setTimeout方式
+    function throttle(fn, delay) {
+      let timer = null
+      return function(args) {
+
+        if(timer) return
+
+        timer = setTimeout(
+          function() {
+            fn(args) //定时器结束执行函数
+            timer = null //清除定时器，可以再次进入
+          }, delay)
+      }
+    }
+
+    let clickEvent = throttle(handleClick, 1000)
+
+  </script>
+</body>
+</html>
