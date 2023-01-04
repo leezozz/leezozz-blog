@@ -6,8 +6,8 @@ on:
     - main
 
 jobs:   # 任务
-  build:    
-    name: build   # name字段是任务的说明
+  build: 
+    # name: build   # name字段是任务的说明
     runs-on: ubuntu-latest
 
     strategy:
