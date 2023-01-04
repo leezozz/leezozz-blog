@@ -25,7 +25,7 @@ jobs:   # 任务
           node-version: ${{ matrix.node-version }} # 版本
 
       - name: Build and Deploy # 步骤3
-        use: JamesIves/github-pages-deploy-action@master # 构建和部署
+        # 构建和部署
         run: |  # %ae 作者的电子邮件地址 【git log --pretty=format:  格式化log输出】
           echo '获取仓库基本信息'
           remote_addr=`git remote get-url --push origin`
