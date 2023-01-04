@@ -37,6 +37,15 @@ const sideBarConfig = [
       },
     ]
   },
+  {
+    curryUri: '/blog/view',
+    sideBarInfo: [
+      {
+        title: '笔记',
+        folder: 'note',
+      },
+    ]
+  },
 ]
 
 module.exports = {

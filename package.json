@@ -1,7 +1,7 @@
 {
   "name": "leezozz-blog",
   "version": "1.0.0",
-  "author": "leezozz-blog",
+  "author": "leezozz",
   "scripts": {
     "dev": "vuepress dev . --open --host \"localhost\"",
     "build": "vuepress build ."

@@ -53,9 +53,14 @@ module.exports = {
         "link": "/blog/vue-router/",
       },
       {
+        "text": "笔记",
+        "icon": "reco-suggestion",
+        "link": "/blog/view/",
+      },
+      {
         "text": "时间轴",
+        "icon": "reco-date",
         "link": "/timeline/",
-        "icon": "reco-date"
       },
       {
         "text": "GitHub",
