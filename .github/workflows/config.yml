@@ -3,7 +3,7 @@ name: Github Action
 on: 
   pull_request:
    branches:
-    main
+    - main
 
 jobs:   # 任务
   build:    # job_id
