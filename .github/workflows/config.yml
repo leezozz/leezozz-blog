@@ -1,0 +1,59 @@
+name: Github Action
+
+on: 
+  pull_request:
+   branches:
+    main
+
+jobs:   # 任务
+  build:    # job_id
+    name: build   # name字段是任务的说明
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+
+     steps:    # 指定每个job的运行步骤。可以包含一个或多个步骤
+      - name: Checkout # 步骤1
+        uses: actions/checkout@v1 # 作用：获取源码。 官方actions库：https://github.com/actions
+
+      - name: Use Node.js ${{ matrix.node-version }} # 步骤2
+        uses: actions/setup-node@v1 # 作用：安装nodejs
+        with:
+          node-version: ${{ matrix.node-version }} # 版本
+
+      - name: Build and Deploy # 步骤3
+        use: JamesIves/github-pages-deploy-action@master # 构建和部署
+        run: |  # %ae 作者的电子邮件地址 【git log --pretty=format:  格式化log输出】
+          echo '获取仓库基本信息'
+          remote_addr=`git remote get-url --push origin`
+          commit_info=`git describe --all --always --long`
+          user_name='leezozz'
+          user_email=`git log -1 --pretty=format:'%ae'`   
+          deploy_branch=blog  
+
+          echo ${remote_addr}
+          echo ${commit_info}
+          echo ${deploy_branch}
+
+          yarn
+          yarn build
+          cd docs/.vuepress/dist
+          git config --global init.defaultBranch $deploy_branch
+          git init
+          echo ${user_name}
+          echo ${user_email}
+
+          git config user.name ${user_name}
+          git config user.email ${user_email}
+          echo '设置git用户信息完成'
+
+          git add -A
+          git commit -m "auto deploy, $commit_info"
+          remote_addr=`echo $remote_addr | awk -F'://' '{print $2}'`
+          remote_addr=https://${user_name}:${{secrets.BLOG_TOKEN}}@${remote_addr}
+          echo ${remote_addr}
+          git remote add origin ${remote_addr}
+          git push origin HEAD:$deploy_branch --force # 推送到github $deploy_branch分支
