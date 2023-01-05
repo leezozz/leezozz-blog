@@ -38,20 +38,15 @@ module.exports = {
         "icon": "reco-home"
       },
       {
-        "text": "js",
+        "text": "基础",
         "icon": "reco-blog",
-        "link": "/blog/js/",
+        "link": "/blog/base/",
         // 1. 函数式编程.md
       },
       {
-        "text": "vue",
+        "text": "vue系列",
         "icon": "reco-other",
-        "link": "/blog/vue/",
-      },
-      {
-        "text": "vue-router",
-        "icon": "reco-three",
-        "link": "/blog/vue-router/",
+        "link": "/blog/vueSeries/",
       },
       {
         "text": "笔记",

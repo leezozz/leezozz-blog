@@ -7,33 +7,32 @@
  */
 const sideBarConfig = [
   {
-    curryUri: '/blog/js',
+    curryUri: '/blog/base',
     sideBarInfo: [
       {
-        title: '一、函数式编程范式',
-        folder: '一、函数式编程范式',
+        title: 'html',
+        folder: 'html',
       },
       {
-        title: '二、ECMAScript 新特性',
-        folder: '二、ECMAScript 新特性',
+        title: 'css',
+        folder: 'css',
       },
+      {
+        title: 'js',
+        folder: 'js',
+      }
     ]
   },
   {
-    curryUri: '/blog/vue',
+    curryUri: '/blog/vueSeries',
     sideBarInfo: [
       {
-        title: '一、基础学习',
-        folder: '一、基础',
+        title: 'vue',
+        folder: 'vue',
       },
-    ]
-  },
-  {
-    curryUri: '/blog/vue-router',
-    sideBarInfo: [
       {
-        title: '一、基本使用',
-        folder: '一、基本使用',
+        title: 'vue-router',
+        folder: 'vue-router',
       },
     ]
   },
