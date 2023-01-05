@@ -3,7 +3,7 @@ const { sideBarFilter }  = require('./src/sideBarFilter')
 // 设置根路径
 // const rootPath = '/Users/admin/Documents/work/vue3/leezozz-blog/js'
 
-console.log('666665', sideBarFilter(sideBarConfig))
+console.log('66666', sideBarFilter(sideBarConfig))
 
 
 
