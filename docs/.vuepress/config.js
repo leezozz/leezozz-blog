@@ -10,7 +10,7 @@ console.log('66666', sideBarFilter(sideBarConfig))
 
 module.exports = {
   "title": "leezozz-blog",
-  "base": "/leezozz-blog/docs",
+  "base": "/leezozz-blog/",
   "description": "我的博客，日常记录",
   "dest": "dist",
   "head": [
