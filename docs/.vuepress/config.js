@@ -93,7 +93,7 @@ module.exports = {
     "lastUpdated": "Last Updated",
     "author": "leezozz",
     // 头像
-    "authorAvatar": "./avatar.png",
+    "authorAvatar": "/img/avatar.png",
     // "record": "xxxx",
     "startYear": "2022"
   },
