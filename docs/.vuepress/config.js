@@ -10,9 +10,9 @@ console.log('66666', sideBarFilter(sideBarConfig))
 
 module.exports = {
   "title": "leezozz-blog",
-  "base": "/leezozz-blog/",
+  "base": "/leezozz-blog/docs",
   "description": "我的博客，日常记录",
-  "dest": "public",
+  "dest": "dist",
   "head": [
     [
       "link",
@@ -93,7 +93,7 @@ module.exports = {
     "lastUpdated": "Last Updated",
     "author": "leezozz",
     // 头像
-    "authorAvatar": "/avatar.png",
+    "authorAvatar": "./avatar.png",
     // "record": "xxxx",
     "startYear": "2022"
   },
