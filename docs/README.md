@@ -2,7 +2,7 @@
 home: true
 heroText: null
 tagline: null
-bgImage: /img/bg.jpeg
+bgImage: /bg.jpeg
 bgImageStyle: {
   height: '700px'
 }
