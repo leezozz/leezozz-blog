@@ -6,7 +6,13 @@ function fslist(filePath, folderName) {
   const fullFilePath = path.join(filePath, folderName)
   // 读取目录
   const files = fs.readdirSync(fullFilePath)
-  return files.map(f => {
+  
+  // 给文件排序
+  const sortFiles = files.sort((a, b) => {
+    return a.split('.')[0] - b.split('.')[0]
+  })
+
+  return sortFiles.map(f => {
     const pathJoin = path.join(fullFilePath, f)
     // 是文件还是文件夹
     const stat = fs.statSync(pathJoin)
