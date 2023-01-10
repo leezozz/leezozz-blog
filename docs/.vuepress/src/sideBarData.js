@@ -24,7 +24,7 @@ const sideBarConfig = [
     ]
   },
   {
-    curryUri: '/blog/vueSeries',
+    curryUri: '/blog/frameSeries',
     sideBarInfo: [
       {
         title: 'vue',
@@ -33,6 +33,10 @@ const sideBarConfig = [
       {
         title: 'vue-router',
         folder: 'vue-router',
+      },
+      {
+        title: 'react',
+        folder: 'react',
       },
     ]
   },
