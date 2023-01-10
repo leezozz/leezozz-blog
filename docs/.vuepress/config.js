@@ -44,9 +44,9 @@ module.exports = {
         // 1. 函数式编程.md
       },
       {
-        "text": "vue系列",
+        "text": "框架",
         "icon": "reco-other",
-        "link": "/blog/vueSeries/",
+        "link": "/blog/frameSeries/",
       },
       {
         "text": "笔记",
