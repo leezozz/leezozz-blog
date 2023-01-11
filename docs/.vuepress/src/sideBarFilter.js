@@ -4,6 +4,7 @@ const path = require('path')
 // 读取文件，返回符合 config.js 中的数组
 function fslist(filePath, folderName) {
   const fullFilePath = path.join(filePath, folderName)
+  console.log('fullFilePath', fullFilePath)
   // 读取目录
   const files = fs.readdirSync(fullFilePath)
   
@@ -42,6 +43,7 @@ function curry(fn, args) {
 
 function sideBarFunc(arr, fn) {
   return arr.map((item) => {
+    console.log('children---', fn(item.folder))
     return {
       title: item.title, 
       collapsable: false,
