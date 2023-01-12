@@ -10,15 +10,15 @@ const sideBarConfig = [
     curryUri: '/blog/base',
     sideBarInfo: [
       {
-        title: 'html',
+        title: 'HTML',
         folder: 'html',
       },
       {
-        title: 'css',
+        title: 'CSS',
         folder: 'css',
       },
       {
-        title: 'js',
+        title: 'JS',
         folder: 'js',
       }
     ]

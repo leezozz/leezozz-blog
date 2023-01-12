@@ -41,7 +41,6 @@ module.exports = {
         "text": "基础",
         "icon": "reco-blog",
         "link": "/blog/base/",
-        // 1. 函数式编程.md
       },
       {
         "text": "框架",
