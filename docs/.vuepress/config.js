@@ -43,7 +43,7 @@ module.exports = {
         "link": "/blog/base/",
       },
       {
-        "text": "框架",
+        "text": "工具",
         "icon": "reco-other",
         "link": "/blog/frameSeries/",
       },
@@ -66,10 +66,10 @@ module.exports = {
     "sidebar": sideBarFilter(sideBarConfig),
     "type": "blog",
     "blogConfig": {
-      // "category": {
-      //   "location": 2,
-      //   "text": "Category"
-      // },
+      "category": {
+        "location": 2,
+        "text": "分类"
+      },
       // "tag": {
       //   "location": 3,
       //   "text": "Tag"

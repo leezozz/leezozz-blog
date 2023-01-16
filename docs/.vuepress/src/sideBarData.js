@@ -20,6 +20,14 @@ const sideBarConfig = [
       {
         title: 'JS',
         folder: 'js',
+      },
+      {
+        title: '虚拟dom',
+        folder: 'virtual-dom',
+      },
+      {
+        title: 'linux',
+        folder: 'linux',
       }
     ]
   },
@@ -37,6 +45,14 @@ const sideBarConfig = [
       {
         title: 'react',
         folder: 'react',
+      },
+      {
+        title: 'echarts',
+        folder: 'echarts',
+      },
+      {
+        title: 'vuex',
+        folder: 'vuex',
       },
     ]
   },
