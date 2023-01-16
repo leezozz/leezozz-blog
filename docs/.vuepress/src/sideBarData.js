@@ -23,7 +23,7 @@ const sideBarConfig = [
       },
       {
         title: '虚拟dom',
-        folder: 'virtual-dom',
+        folder: 'virtualDOM',
       },
       {
         title: 'linux',
