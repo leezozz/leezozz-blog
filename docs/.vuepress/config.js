@@ -89,7 +89,7 @@ module.exports = {
     // "logo": "/logo.png",
     "search": true,
     "searchMaxSuggestions": 10,
-    "lastUpdated": "Last Updated",
+    "lastUpdated": "最近更新时间",
     "author": "leezozz",
     // 头像
     "authorAvatar": "/avatar.png",
