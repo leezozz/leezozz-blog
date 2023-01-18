@@ -2,9 +2,9 @@
 home: true
 heroText: null
 tagline: null
-bgImage: /bg.jpeg
+bgImage: /bgimg.jpeg
 bgImageStyle: {
-  height: '700px'
+  height: '800px'
 }
 isShowTitleInHome: false
 ---
