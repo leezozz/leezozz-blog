@@ -7,6 +7,8 @@
     "build": "vuepress build docs"
   },
   "devDependencies": {
+    "@vuepress-reco/vuepress-plugin-bgm-player": "^1.1.4",
+    "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
     "vuepress": "1.9.7",
     "vuepress-theme-reco": "1.6.16"
   },
