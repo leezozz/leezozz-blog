@@ -73,6 +73,7 @@ module.exports = {
   },
   plugins: [
     [
+      // bgm插件
       "@vuepress-reco/vuepress-plugin-bgm-player",{
         audios: [
           // 本地文件示例
@@ -99,6 +100,7 @@ module.exports = {
       }
     ],
     [
+      // 看板娘插件
       '@vuepress-reco/vuepress-plugin-kan-ban-niang',{
         theme: [
           'blackCat', 'whiteCat', 'miku',  'haru1', 'haru2', 'haruto', 'koharu', 'izumi', 'shizuku', 'wanko',  'z16'

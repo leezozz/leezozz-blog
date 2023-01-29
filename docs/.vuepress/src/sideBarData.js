@@ -22,6 +22,10 @@ const sideBarConfig = [
         folder: 'js',
       },
       {
+        title: 'TS',
+        folder: 'TypeScript',
+      },
+      {
         title: '虚拟dom',
         folder: 'virtualDOM',
       },
