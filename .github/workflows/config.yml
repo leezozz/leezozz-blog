@@ -51,7 +51,8 @@ jobs: # 任务
           git add -A
           git commit -m "auto deploy, $commit_info"
           remote_addr=`echo $remote_addr | awk -F'://' '{print $2}'`
-          remote_addr=https://${user_name}:${{secrets.BLOG_TOKEN}}@${remote_addr}
+          remote_addr=https://${user_name}:${{secrets.BLOG_TOKEN}}@${remote_addr} 
           echo ${remote_addr}
+          echo '记录客户端的IP地址'
           git remote add origin ${remote_addr}
           git push origin HEAD:$deploy_branch --force # 推送到github $deploy_branch分支
