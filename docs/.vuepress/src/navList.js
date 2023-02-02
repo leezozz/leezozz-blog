@@ -10,7 +10,7 @@ const navList = [
     "link": "/blog/base/",
   },
   {
-    "text": "工具",
+    "text": "进阶",
     "icon": "reco-other",
     "link": "/blog/frameSeries/",
   },
