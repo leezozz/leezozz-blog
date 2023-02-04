@@ -63,10 +63,10 @@ module.exports = {
       platform: 'github',  // v4必须登录但没有次数限制。v3不用登录，但是有调用次数限制。
       owner: 'leezozz',
       repo: 'leezozz-blog',
-      clientId: 'a0e3b9c6227d9a4c068a', // 对应本地地址：http://localhost:8080/leezozz-blog/
-      clientSecret: 'e0eaac92cbee613c208012e6c6a3895791569596', 
-      // clientId: 'f03ca82e012360eea191', // 对应线上地址：https://leezozz.github.io/leezozz-blog/
-      // clientSecret: '8b242ff332fe43114af35529892f233993aa0a90', 
+      // clientId: 'a0e3b9c6227d9a4c068a', // 对应本地地址：http://localhost:8080/leezozz-blog/
+      // clientSecret: 'e0eaac92cbee613c208012e6c6a3895791569596', 
+      clientId: 'f03ca82e012360eea191', // 对应线上地址：https://leezozz.github.io/leezozz-blog/
+      clientSecret: '8b242ff332fe43114af35529892f233993aa0a90', 
     },
     "search": true,
     "searchMaxSuggestions": 10,
