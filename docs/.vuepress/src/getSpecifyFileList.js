@@ -4,8 +4,9 @@ const specifyFileList = (arg, itemTitle) => {
   // 列如："./react/1. 基本模版.md" ， 过滤包含 /react/ 的数据
   const res = arg.filter((item) => {
     console.log('--', item.match(/\/(\S*)\//)[1])
-
-    const target = item.match(/\/(\S*)\//)[1]
+    // 过滤其他文件，只保留md文件
+    const handleFile = item.slice(item.lastIndexOf('.')) === ".md"
+    const target = handleFile && item.match(/\/(\S*)\//)[1]
 
     return target === itemTitle
   }).map((item) => {
