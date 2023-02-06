@@ -7,9 +7,12 @@ function fslist(filePath, folderName) {
   console.log('fullFilePath', fullFilePath)
   // 读取目录
   const files = fs.readdirSync(fullFilePath)
+
+  // 过滤非md文件
+  const newFiles = files.filter((item) => item.slice(item.lastIndexOf('.')) === ".md")
   
   // 给文件排序
-  const sortFiles = files.sort((a, b) => {
+  const sortFiles = newFiles.sort((a, b) => {
     return a.split('.')[0] - b.split('.')[0]
   })
 
