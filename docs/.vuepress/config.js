@@ -44,15 +44,20 @@ module.exports = {
       //   "text": "Tag"
       // },
       "socialLinks": [     // 信息栏展示社交信息
-        { "icon": 'reco-github', "link": 'https://github.com/leezozz/leezozz-blog.git' }
+        { "icon": 'reco-github', "link": 'https://github.com/leezozz/leezozz-blog.git' },
+        { "icon": 'reco-juejin', "link": 'https://juejin.cn/user/2190673010496654/posts' }
       ]
     },
     "friendLink": [
       {
-        "title": "日常记录",
+        "title": "vuepress",
         "desc": "博观而约取，厚积而薄发。",
-        "email": "1156743527@qq.com",
-        "link": "https://github.com/leezozz/leezozz-blog.git"
+        "link": "https://vuepress.vuejs.org/zh/"
+      },
+      {
+        "title": "vuepress-theme-reco",
+        "desc": "静水深流",
+        "link": "https://vuepress-theme-reco.recoluan.com/"
       }
     ],
     // 评论功能
