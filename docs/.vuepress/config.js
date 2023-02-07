@@ -2,10 +2,7 @@ const { sideBarConfig }  = require('./src/sideBarData')
 const { sideBarFilter }  = require('./src/sideBarFilter')
 const { navList }  = require('./src/navList')
 
-// 设置根路径
-// const rootPath = '/Users/admin/Documents/work/vue3/leezozz-blog/js'
-
-console.log('侧边栏数据：', sideBarFilter(sideBarConfig))
+// console.log('侧边栏数据：', sideBarFilter(sideBarConfig))
 
 
 
