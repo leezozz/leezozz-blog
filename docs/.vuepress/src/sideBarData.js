@@ -22,6 +22,10 @@ const sideBarConfig = [
         folder: 'js',
       },
       {
+        title: 'HTTP',
+        folder: 'HTTP',
+      },
+      {
         title: 'TS',
         folder: 'TypeScript',
       },
