@@ -23,6 +23,9 @@ jobs: # 任务
           node-version: ${{ matrix.node-version }} # 版本
 
       - name: Build and Deploy # 步骤3
+        env: 
+          CLIENT_ID: ${{secrets.CLIENT_ID}}
+          CLIENT_SECRET: ${{secrets.CLIENT_SECRET}}
         # 构建和部署
         run: |  # %ae 作者的电子邮件地址 【git log --pretty=format:  格式化log输出】
           echo '获取仓库基本信息'
