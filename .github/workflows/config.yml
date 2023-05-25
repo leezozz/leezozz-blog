@@ -31,8 +31,8 @@ jobs: # 任务
           user_name='leezozz'
           user_email=`git log -1 --pretty=format:'%ae'`   
           deploy_branch=blog  
-          customClientId=${secrets.CLIENT_ID}
-          customClientSecret=${secrets.CLIENT_SECRET}
+          customClientId=${{secrets.CLIENT_ID}}
+          customClientSecret=${{secrets.CLIENT_SECRET}}
 
           echo ${remote_addr}
           echo ${commit_info}
