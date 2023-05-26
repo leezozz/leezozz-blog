@@ -4,9 +4,6 @@ const { navList }  = require('./src/navList')
 const core = require('@actions/core')
 
 // console.log('侧边栏数据：', sideBarFilter(sideBarConfig))
-console.log(`core.getInput('customClientId')`, core.getInput('customClientId'))
-console.log(`core.getInput('customClientSecret')`, core.getInput('customClientSecret'))
-
 
 
 module.exports = {
@@ -67,12 +64,9 @@ module.exports = {
       "platform": 'github',  // v4必须登录但没有次数限制。v3不用登录，但是有调用次数限制。
       "owner": 'leezozz',
       "repo": 'leezozz-blog',
-      // "clientId": 'a0e3b9c6227d9a4c068a', // 对应本地地址：http://localhost:8080/leezozz-blog/
-      // "clientSecret": 'e0eaac92cbee613c208012e6c6a3895791569596',  
-      // "clientId": 'f03ca82e012360eea191', // 对应线上地址：https://leezozz.github.io/leezozz-blog/
-      // "clientSecret": 'ebfbfd7c6863821756d361c25ef4a8faee253d7f', 
-      "clientId": core.getInput('customClientId'), // 对应线上地址：https://leezozz.github.io/leezozz-blog/
-      "clientSecret": core.getInput('customClientSecret'), 
+      "clientId": process.env.CLIENT_ID, // 对应线上地址：https://leezozz.github.io/leezozz-blog/
+      "clientSecret": process.env.CLIENT_SECRET, 
+
     },
     "search": true,
     "searchMaxSuggestions": 10,
