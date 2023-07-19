@@ -24,7 +24,7 @@
 
     // 去除README.md文件
     const filterFileList = curFileList.keys().filter(item => item !== './README.md')
-    console.log('filterFileList', filterFileList)
+    // console.log('filterFileList', filterFileList)
 
 
     return {
