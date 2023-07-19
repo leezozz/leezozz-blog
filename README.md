@@ -21,4 +21,10 @@ categories:
 
 ### [线上地址](https://leezozz.github.io/leezozz-blog/)
 
+**注意：**
+两个分支: 
+- main (主分支)
+- blog（用于推送线上地址分支）<br />
+每次push之后，新建一个合并请求，`等完成校验规则之后`再合并代码
+
 
