@@ -62,6 +62,10 @@ const sideBarConfig = [
         title: 'vuex',
         folder: 'vuex',
       },
+      {
+        title: 'Nuxt',
+        folder: 'Nuxt',
+      },
     ]
   },
   {
