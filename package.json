@@ -2,6 +2,7 @@
   "name": "leezozz-blog",
   "version": "1.0.0",
   "author": "leezozz",
+  "type": "module",
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
