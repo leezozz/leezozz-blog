@@ -66,6 +66,10 @@ const sideBarConfig = [
         title: 'Nuxt',
         folder: 'Nuxt',
       },
+      {
+        title: '性能优化',
+        folder: 'performance',
+      },
     ]
   },
   {
